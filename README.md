@@ -1,12 +1,6 @@
-# Example Codeglue Project #
+# Plane Jam 2019 #
 
-An example boilerplate project using [codeglue](https://github.com/ehgoodenough/codeglue).
-
-### How to Clone ###
-
-1. Clone this codebase as the boilerplate for your new project.
-2. Rename all instances of `Example Codeglue Project` and `example-codeglue-project`.
-3. Delete this section from this readme.
+A game from the plane ride back from GDC 2019.
 
 ### How to Build ###
 
@@ -22,4 +16,9 @@ Start the server.
 ```
 yarn install
 yarn start
+```
+Deploy to [github.io](https://ehgoodenough.github.io/planejam2019).
+
+```
+yarn deploy
 ```

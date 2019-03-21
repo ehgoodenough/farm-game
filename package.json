@@ -14,9 +14,11 @@
   "scripts": {
     "build": "codeglue --stage=production",
     "start": "codeglue --stage=development --mode=server",
-    "zip": "bestzip build.zip builds/web/*"
+    "zip": "bestzip build.zip builds/web/*",
+    "deploy": "gh-pages --dist builds/web"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "keyb": "^1.2.0",
     "preact": "^8.2.7",
     "statgrab": "^1.2.0",
