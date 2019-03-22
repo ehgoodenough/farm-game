@@ -20,7 +20,7 @@ export default class Model {
         this.wateringCost = 1
         this.growthCost = 2
         this.woodHarvestCount = 5
-        this.goldForOneWood = 1
+        this.goldForOneWood = 2
 
         this.resources = {
             "gold": 5,

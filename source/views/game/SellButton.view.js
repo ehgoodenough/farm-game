@@ -19,7 +19,9 @@ export default class SellButton {
     get onClick() {
         return (event) => {
             console.log("SELL CLICKED")
-            model.sellWood()
+            if(model.resources.wood > 0) {
+                model.sellWood()
+            }
         }
     }
 }

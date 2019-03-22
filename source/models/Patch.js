@@ -39,6 +39,7 @@ export default class Patch {
         && this.tree !== undefined
         && this.tree.stage === 5) {
             this.tree = undefined
+            this.watered = false
             model.resources.wood += model.woodHarvestCount
             console.log(`Cut tree! Got ${model.woodWorth} wood!`)
         }
