@@ -1,12 +1,18 @@
 import Keyb from "keyb"
 
+import Patch from "models/Patch.js"
+
 export default class Model {
     constructor() {
-        this.time = 0
+        this.patches = [
+            new Patch(),
+            new Patch(),
+            new Patch()
+        ]
     }
     update(delta) {
-        if(Keyb.isPressed("<space>")) {
-            this.time += delta.s
-        }
+        this.patches.forEach((patch) => {
+            patch.update(delta)
+        })
     }
 }
