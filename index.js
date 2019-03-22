@@ -140,6 +140,21 @@ exports.push([module.i, "@font-face {\n  font-weight: 400;\n  font-family: \"com
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/BuyButton.view.less":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/BuyButton.view.less ***!
+  \****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".BuyButton {\n  cursor: pointer;\n}\n", ""]);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/GameScreen.view.less":
 /*!*****************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/GameScreen.view.less ***!
@@ -148,8 +163,13 @@ exports.push([module.i, "@font-face {\n  font-weight: 400;\n  font-family: \"com
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var urlEscape = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../images/coins.png */ "./source/images/coins.png"));
+var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(/*! ../../images/wood.png */ "./source/images/wood.png"));
+
 // Module
-exports.push([module.i, ".GameScreen .Inventory {\n  left: 0em;\n  right: 0em;\n  bottom: 0em;\n  padding: 0.5em;\n  position: absolute;\n  background-color: hotpink;\n  font-size: 0.66em;\n}\n.GameScreen .Inventory .Item {\n  display: inline;\n  cursor: pointer;\n  opacity: 0.5;\n}\n.GameScreen .Inventory .Item:not(:first-child):before {\n  opacity: 0.5;\n  content: \" | \";\n}\n.GameScreen .Inventory .Item:hover,\n.GameScreen .Inventory .Item[isSelected] {\n  opacity: 1;\n}\n", ""]);
+exports.push([module.i, ".GameScreen .ResourceBar {\n  text-align: left;\n  position: absolute;\n  padding-left: 1em;\n  margin-top: 0.2em;\n}\n.GameScreen .ResourceBar .GoldIcon {\n  display: inline-block;\n  text-align: left;\n  padding-left: 1em;\n  padding-top: 1em;\n  margin-right: 0.2em;\n  background-image: url(" + ___CSS_LOADER_URL___0___ + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 1em;\n  height: 1em;\n}\n.GameScreen .ResourceBar .GoldLabel {\n  display: inline-block;\n  padding-right: 2em;\n}\n.GameScreen .ResourceBar .WoodIcon {\n  display: inline-block;\n  text-align: left;\n  padding-left: 1em;\n  padding-top: 1em;\n  background-image: url(" + ___CSS_LOADER_URL___1___ + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 1em;\n  height: 1em;\n}\n.GameScreen .ResourceBar .WoodLabel {\n  display: inline-block;\n}\n.GameScreen .Inventory {\n  left: 0em;\n  right: 0em;\n  bottom: 0em;\n  padding: 0.5em;\n  position: absolute;\n  background-color: hotpink;\n  font-size: 0.66em;\n}\n.GameScreen .Inventory .Item {\n  display: inline;\n  cursor: pointer;\n  opacity: 0.5;\n}\n.GameScreen .Inventory .Item:not(:first-child):before {\n  opacity: 0.5;\n  content: \" | \";\n}\n.GameScreen .Inventory .Item:hover,\n.GameScreen .Inventory .Item[isSelected] {\n  opacity: 1;\n}\n", ""]);
 
 
 
@@ -164,7 +184,22 @@ exports.push([module.i, ".GameScreen .Inventory {\n  left: 0em;\n  right: 0em;\n
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".Patch {\n  width: 3em;\n  height: 1em;\n  position: absolute;\n  background-color: brown;\n  border-radius: 0.1em;\n}\n", ""]);
+exports.push([module.i, ".Patch {\n  width: 3em;\n  height: 1em;\n  position: absolute;\n  background-color: sandybrown;\n  border-radius: 0.1em;\n}\n.Patch.watered {\n  background-color: saddlebrown;\n}\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/SellButton.view.less":
+/*!*****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/SellButton.view.less ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".SellButton {\n  cursor: pointer;\n}\n", ""]);
 
 
 
@@ -1935,6 +1970,28 @@ module.exports = __webpack_require__.p + "a6707143c08357a98c345854736fb894.ttf";
 
 /***/ }),
 
+/***/ "./source/images/coins.png":
+/*!*********************************!*\
+  !*** ./source/images/coins.png ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c367e4cc39317d80d7e9716fea6ad8c5.png";
+
+/***/ }),
+
+/***/ "./source/images/wood.png":
+/*!********************************!*\
+  !*** ./source/images/wood.png ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "e52a426a21a6b263362f161239336be8.png";
+
+/***/ }),
+
 /***/ "./source/index.js":
 /*!*************************!*\
   !*** ./source/index.js ***!
@@ -1994,6 +2051,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var models_Patch_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! models/Patch.js */ "./source/models/Patch.js");
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 
 
 var protoworld = {
@@ -2004,7 +2065,8 @@ var protoworld = {
     },
     "tree": {
       "stage": 5
-    }
+    },
+    "watered": false
   }, {
     "position": {
       "x": 5,
@@ -2012,7 +2074,8 @@ var protoworld = {
     },
     "tree": {
       "stage": 5
-    }
+    },
+    "watered": false
   }, {
     "position": {
       "x": 9,
@@ -2020,36 +2083,96 @@ var protoworld = {
     },
     "tree": {
       "stage": 5
-    }
+    },
+    "watered": false
   }]
 };
 
-var Model = function Model() {
-  _classCallCheck(this, Model);
+var Model =
+/*#__PURE__*/
+function () {
+  function Model() {
+    _classCallCheck(this, Model);
 
-  this.patches = protoworld.patches.map(function (protopatch) {
-    return new models_Patch_js__WEBPACK_IMPORTED_MODULE_1__["default"](protopatch);
-  });
-  this.resources = {
-    "gold": 5,
-    "wood": 0 // When an item is selected from the inventory,
-    // it sets the `selectedItem` field. When a click
-    // happens on a patch, it consults this field
-    // to see how it should react to this item.
+    this.patches = protoworld.patches.map(function (protopatch) {
+      return new models_Patch_js__WEBPACK_IMPORTED_MODULE_1__["default"](protopatch);
+    });
+    this.nextX = 1;
+    this.nextY = 18; //these should probs be in an object but lazy
 
-  };
-  this.selectedItem = undefined;
-  this.items = [{
-    "key": "AXE",
-    "label": "Axe"
+    this.seedCost = 2;
+    this.wateringCost = 1;
+    this.growthCost = 2;
+    this.woodHarvestCount = 5;
+    this.goldForOneWood = 2;
+    this.patchCost = 10;
+    this.resources = {
+      "gold": 5,
+      "wood": 5,
+      // TODO have seed counter instead of just autobuying them ?
+      "seeds": 0 // When an item is selected from the inventory,
+      // it sets the `selectedItem` field. When a click
+      // happens on a patch, it consults this field
+      // to see how it should react to this item.
+
+    };
+    this.selectedItem = undefined;
+    this.items = [{
+      "key": "AXE",
+      "label": "Axe"
+    }, {
+      "key": "WATERING_CAN",
+      "label": "Watering Can"
+    }, {
+      "key": "SAPLINGS",
+      "label": "Saplings"
+    }];
+  } // OBVIOUSLY THESE NEEDS REFACTOR PLZ NO JUDGE
+
+
+  _createClass(Model, [{
+    key: "sellWood",
+    value: function sellWood() {
+      this.resources.wood -= 1;
+      this.resources.gold += this.goldForOneWood;
+    }
   }, {
-    "key": "WATERING_CAN",
-    "label": "Watering Can"
+    key: "buySeed",
+    value: function buySeed() {
+      this.resources.gold -= 1;
+      this.resources.seeds += 1;
+    }
   }, {
-    "key": "SAPLINGS",
-    "label": "Saplings"
-  }];
-};
+    key: "buyLand",
+    value: function buyLand() {
+      console.log("BUYING LAND, LIKE A BALLER");
+      var landData = {
+        "position": {
+          "x": this.nextX,
+          "y": this.nextY
+        },
+        "tree": {
+          "stage": 0
+        },
+        "watered": false
+      };
+      var newPatch = new models_Patch_js__WEBPACK_IMPORTED_MODULE_1__["default"](landData);
+      this.patches.push(newPatch);
+
+      if (this.nextX === 9) {
+        this.nextX = 1;
+        this.nextY += 9;
+      } else {
+        this.nextX += 4;
+      }
+
+      this.resources.gold -= this.patchCost;
+      console.log("Next X: ".concat(this.nextX, " Next Y: ").concat(this.nextY));
+    }
+  }]);
+
+  return Model;
+}();
 
 
 
@@ -2092,6 +2215,7 @@ function () {
     };
     this.position = protopatch.position;
     this.tree = protopatch.tree;
+    this.watered = protopatch.watered || false;
   } // Patch.onClick
   // Called when a player clicks
   // on the patch from the view.
@@ -2104,22 +2228,28 @@ function () {
         return;
       }
 
-      if (models_js__WEBPACK_IMPORTED_MODULE_0__["default"].selectedItem.key === "SAPLINGS" && this.tree === undefined) {
+      if (models_js__WEBPACK_IMPORTED_MODULE_0__["default"].selectedItem.key === "SAPLINGS" && this.tree === undefined && models_js__WEBPACK_IMPORTED_MODULE_0__["default"].resources.gold > models_js__WEBPACK_IMPORTED_MODULE_0__["default"].seedCost) {
         this.tree = {
           "stage": 1
         };
-        console.log("Planted tree! Set to stage 1.");
+        models_js__WEBPACK_IMPORTED_MODULE_0__["default"].resources.gold -= models_js__WEBPACK_IMPORTED_MODULE_0__["default"].seedCost;
       }
 
-      if (models_js__WEBPACK_IMPORTED_MODULE_0__["default"].selectedItem.key === "WATERING_CAN" && this.tree !== undefined && this.tree.stage < 5) {
-        this.tree.stage += 1;
-        console.log("Watered tree! Grew by 1 stage.");
+      if (models_js__WEBPACK_IMPORTED_MODULE_0__["default"].selectedItem.key === "WATERING_CAN") {
+        if (this.watered === false && models_js__WEBPACK_IMPORTED_MODULE_0__["default"].resources.gold >= models_js__WEBPACK_IMPORTED_MODULE_0__["default"].wateringCost) {
+          this.watered = true;
+          models_js__WEBPACK_IMPORTED_MODULE_0__["default"].resources.gold -= models_js__WEBPACK_IMPORTED_MODULE_0__["default"].wateringCost;
+        } else if (this.tree && this.tree.stage < 5 && models_js__WEBPACK_IMPORTED_MODULE_0__["default"].resources.gold >= models_js__WEBPACK_IMPORTED_MODULE_0__["default"].growthCost) {
+          this.tree.stage += 1;
+          models_js__WEBPACK_IMPORTED_MODULE_0__["default"].resources.gold -= models_js__WEBPACK_IMPORTED_MODULE_0__["default"].growthCost;
+        }
       }
 
       if (models_js__WEBPACK_IMPORTED_MODULE_0__["default"].selectedItem.key === "AXE" && this.tree !== undefined && this.tree.stage === 5) {
         this.tree = undefined;
-        models_js__WEBPACK_IMPORTED_MODULE_0__["default"].resources.wood += 5;
-        console.log("Cut tree! Got 5 wood!");
+        this.watered = false;
+        models_js__WEBPACK_IMPORTED_MODULE_0__["default"].resources.wood += models_js__WEBPACK_IMPORTED_MODULE_0__["default"].woodHarvestCount;
+        console.log("Cut tree! Got ".concat(models_js__WEBPACK_IMPORTED_MODULE_0__["default"].woodWorth, " wood!"));
       }
     }
   }]);
@@ -2241,6 +2371,99 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./source/views/game/BuyButton.view.js":
+/*!*********************************************!*\
+  !*** ./source/views/game/BuyButton.view.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BuyButton; });
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.mjs");
+/* harmony import */ var views_game_BuyButton_view_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! views/game/BuyButton.view.less */ "./source/views/game/BuyButton.view.less");
+/* harmony import */ var views_game_BuyButton_view_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(views_game_BuyButton_view_less__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var models_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! models/.js */ "./source/models/.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+
+
+var BuyButton =
+/*#__PURE__*/
+function () {
+  function BuyButton() {
+    _classCallCheck(this, BuyButton);
+  }
+
+  _createClass(BuyButton, [{
+    key: "render",
+    value: function render() {
+      return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "SellButton",
+        onClick: this.onClick
+      }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Icon"
+      }), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Label"
+      }, "BUY LAND"));
+    }
+  }, {
+    key: "onClick",
+    get: function get() {
+      return function (event) {
+        console.log("SELL CLICKED");
+
+        if (models_js__WEBPACK_IMPORTED_MODULE_2__["default"].resources.gold > models_js__WEBPACK_IMPORTED_MODULE_2__["default"].patchCost) {
+          models_js__WEBPACK_IMPORTED_MODULE_2__["default"].buyLand();
+        }
+      };
+    }
+  }]);
+
+  return BuyButton;
+}();
+
+
+
+/***/ }),
+
+/***/ "./source/views/game/BuyButton.view.less":
+/*!***********************************************!*\
+  !*** ./source/views/game/BuyButton.view.less ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./BuyButton.view.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/BuyButton.view.less");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./source/views/game/GameScreen.view.js":
 /*!**********************************************!*\
   !*** ./source/views/game/GameScreen.view.js ***!
@@ -2254,13 +2477,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.mjs");
 /* harmony import */ var models_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! models/.js */ "./source/models/.js");
 /* harmony import */ var views_game_Patch_view_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! views/game/Patch.view.js */ "./source/views/game/Patch.view.js");
-/* harmony import */ var views_game_GameScreen_view_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! views/game/GameScreen.view.less */ "./source/views/game/GameScreen.view.less");
-/* harmony import */ var views_game_GameScreen_view_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(views_game_GameScreen_view_less__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var views_game_SellButton_view_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! views/game/SellButton.view.js */ "./source/views/game/SellButton.view.js");
+/* harmony import */ var views_game_BuyButton_view_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! views/game/BuyButton.view.js */ "./source/views/game/BuyButton.view.js");
+/* harmony import */ var views_game_GameScreen_view_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! views/game/GameScreen.view.less */ "./source/views/game/GameScreen.view.less");
+/* harmony import */ var views_game_GameScreen_view_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(views_game_GameScreen_view_less__WEBPACK_IMPORTED_MODULE_5__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
 
 
 
@@ -2280,6 +2507,16 @@ function () {
       return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
         class: "GameScreen"
       }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "ResourceBar"
+      }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "GoldIcon"
+      }), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "GoldLabel"
+      }, models_js__WEBPACK_IMPORTED_MODULE_1__["default"].resources.gold), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "WoodIcon"
+      }), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "WoodLabel"
+      }, models_js__WEBPACK_IMPORTED_MODULE_1__["default"].resources.wood), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h(views_game_SellButton_view_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h(views_game_BuyButton_view_js__WEBPACK_IMPORTED_MODULE_4__["default"], null)), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
         class: "Farm"
       }, models_js__WEBPACK_IMPORTED_MODULE_1__["default"].patches.map(function (patch) {
         return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h(views_game_Patch_view_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -2405,12 +2642,23 @@ function () {
     key: "render",
     value: function render() {
       return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
-        class: "Patch",
+        class: this.className,
         style: this.style,
         onClick: this.onClick
       }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h(views_game_Tree_view_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
         tree: this.props.patch.tree
       }));
+    }
+  }, {
+    key: "className",
+    get: function get() {
+      var classes = ["Patch"];
+
+      if (this.props.patch !== undefined && this.props.patch.watered === true) {
+        classes.push("watered");
+      }
+
+      return classes.join(" ");
     }
   }, {
     key: "style",
@@ -2447,6 +2695,99 @@ function () {
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./Patch.view.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/Patch.view.less");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./source/views/game/SellButton.view.js":
+/*!**********************************************!*\
+  !*** ./source/views/game/SellButton.view.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SellButton; });
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.mjs");
+/* harmony import */ var views_game_SellButton_view_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! views/game/SellButton.view.less */ "./source/views/game/SellButton.view.less");
+/* harmony import */ var views_game_SellButton_view_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(views_game_SellButton_view_less__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var models_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! models/.js */ "./source/models/.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+
+
+var SellButton =
+/*#__PURE__*/
+function () {
+  function SellButton() {
+    _classCallCheck(this, SellButton);
+  }
+
+  _createClass(SellButton, [{
+    key: "render",
+    value: function render() {
+      return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "SellButton",
+        onClick: this.onClick
+      }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Icon"
+      }), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Label"
+      }, "SELL WOOD"));
+    }
+  }, {
+    key: "onClick",
+    get: function get() {
+      return function (event) {
+        console.log("SELL CLICKED");
+
+        if (models_js__WEBPACK_IMPORTED_MODULE_2__["default"].resources.wood > 0) {
+          models_js__WEBPACK_IMPORTED_MODULE_2__["default"].sellWood();
+        }
+      };
+    }
+  }]);
+
+  return SellButton;
+}();
+
+
+
+/***/ }),
+
+/***/ "./source/views/game/SellButton.view.less":
+/*!************************************************!*\
+  !*** ./source/views/game/SellButton.view.less ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./SellButton.view.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/SellButton.view.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
