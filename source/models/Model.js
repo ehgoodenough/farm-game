@@ -4,9 +4,9 @@ import Patch from "models/Patch.js"
 
 const protoworld = {
     "patches": [
-        {"position": {"x": 1, "y": 9}, "tree": {"stage": 5}},
-        {"position": {"x": 5, "y": 9}, "tree": {"stage": 5}},
-        {"position": {"x": 9, "y": 9}, "tree": {"stage": 5}},
+        {"position": {"x": 1, "y": 9}, "tree": {"stage": 5}, "watered": false},
+        {"position": {"x": 5, "y": 9}, "tree": {"stage": 5}, "watered": false},
+        {"position": {"x": 9, "y": 9}, "tree": {"stage": 5}, "watered": false},
     ]
 }
 
@@ -16,10 +16,17 @@ export default class Model {
             return new Patch(protopatch)
         })
 
+        /**
         this.resources = {
             "gold": 5,
             "wood": 0
         }
+         **/
+        this.resources = {
+            "gold": 9999999,
+            "wood": 9999999
+        }
+
 
         // When an item is selected from the inventory,
         // it sets the `selectedItem` field. When a click

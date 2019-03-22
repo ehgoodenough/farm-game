@@ -9,6 +9,16 @@ export default class GameScreen {
     render() {
         return (
             <div class="GameScreen">
+                <div class="ResourceBar">
+                    <div class="GoldIcon" />
+                    <div class="GoldLabel">
+                        {model.resources.gold}
+                    </div>
+                    <div class="WoodIcon" />
+                    <div class="WoodLabel">
+                        {model.resources.wood}
+                    </div>
+                </div>
                 <div class="Farm">
                     {model.patches.map((patch) => (
                         <Patch patch={patch}/>

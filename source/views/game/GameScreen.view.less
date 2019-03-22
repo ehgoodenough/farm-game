@@ -1,6 +1,45 @@
 @import "../Styles.view.less";
 
 .GameScreen {
+    .ResourceBar {
+        text-align: left;
+        position: absolute;
+        padding-left: 1em;
+        margin-top: .2em;
+
+
+        .GoldIcon {
+            display: inline-block;
+            text-align: left;
+            padding-left: 1em;
+            padding-top: 1em;
+            margin-right: .2em;
+            background-image: url("../../images/coins.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 1em;
+            height: 1em;
+        }
+        .GoldLabel {
+            display: inline-block;
+            padding-right: 2em;
+        }
+        .WoodIcon {
+            display: inline-block;
+            text-align: left;
+            padding-left: 1em;
+            padding-top: 1em;
+            background-image: url("../../images/wood.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 1em;
+            height: 1em;
+        }
+        .WoodLabel {
+            display: inline-block;
+        }
+
+    }
     .Inventory {
         left: 0em;
         right: 0em;

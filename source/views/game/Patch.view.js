@@ -8,11 +8,20 @@ import Styles from "views/game/Patch.view.less"
 export default class Patch {
     render() {
         return (
-            <div class="Patch" style={this.style} onClick={this.onClick}>
+            <div class={this.className} style={this.style} onClick={this.onClick}>
                 <Tree tree={this.props.patch.tree}/>
             </div>
         )
     }
+
+    get className() {
+        let classes = ["Patch"]
+        if(this.props.patch !== undefined && this.props.patch.watered === true) {
+            classes.push("watered")
+        }
+        return classes.join(" ")
+    }
+
     get style() {
         return {
             "top": this.props.patch.position.y + "em",
