@@ -22,26 +22,25 @@ export default class Patch {
         }
         if(model.selectedItem.key === "SAPLINGS"
         && this.tree === undefined
-        && model.resources.gold > 0) {
+        && model.resources.gold > model.seedCost) {
             this.tree = {"stage": 1}
-            model.resources.gold -= 5
+            model.resources.gold -= model.seedCost
         }
         if(model.selectedItem.key === "WATERING_CAN") {
-            if(this.watered === false) {
+            if(this.watered === false && model.resources.gold >= model.wateringCost) {
                 this.watered = true
-                model.resources.gold -= 1
-            } else if(this.tree && this.tree.stage < 5) {
+                model.resources.gold -= model.wateringCost
+            } else if(this.tree && this.tree.stage < 5 && model.resources.gold >= model.growthCost) {
                 this.tree.stage += 1
-                model.resources.gold -= 2
+                model.resources.gold -= model.growthCost
             }
-
         }
         if(model.selectedItem.key === "AXE"
         && this.tree !== undefined
         && this.tree.stage === 5) {
             this.tree = undefined
-            model.resources.wood += 5
-            console.log("Cut tree! Got 5 wood!")
+            model.resources.wood += model.woodHarvestCount
+            console.log(`Cut tree! Got ${model.woodWorth} wood!`)
         }
     }
 }

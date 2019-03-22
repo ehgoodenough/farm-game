@@ -3,6 +3,7 @@ import Preact from "preact"
 import model from "models/.js"
 
 import Patch from "views/game/Patch.view.js"
+import SellButton from "views/game/SellButton.view.js"
 import Styles from "views/game/GameScreen.view.less"
 
 export default class GameScreen {
@@ -18,6 +19,7 @@ export default class GameScreen {
                     <div class="WoodLabel">
                         {model.resources.wood}
                     </div>
+                    <SellButton />
                 </div>
                 <div class="Farm">
                     {model.patches.map((patch) => (

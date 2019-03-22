@@ -16,15 +16,17 @@ export default class Model {
             return new Patch(protopatch)
         })
 
-        /**
+        this.seedCost = 2
+        this.wateringCost = 1
+        this.growthCost = 2
+        this.woodHarvestCount = 5
+        this.goldForOneWood = 1
+
         this.resources = {
             "gold": 5,
-            "wood": 0
-        }
-         **/
-        this.resources = {
-            "gold": 9999999,
-            "wood": 9999999
+            "wood": 5,
+            // TODO have seed counter instead of just autobuying them ?
+            "seeds": 0
         }
 
 
@@ -38,5 +40,16 @@ export default class Model {
             {"key": "WATERING_CAN", "label": "Watering Can"},
             {"key": "SAPLINGS", "label": "Saplings"},
         ]
+    }
+
+    // OBVIOUSLY THESE NEEDS REFACTOR PLZ NO JUDGE
+    sellWood() {
+        this.resources.wood -= 1
+        this.resources.gold += this.goldForOneWood
+    }
+
+    buySeed() {
+        this.resources.gold -= 1
+        this.resources.seeds += 1
     }
 }
