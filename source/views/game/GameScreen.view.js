@@ -4,6 +4,8 @@ import model from "models/.js"
 
 import Patch from "views/game/Patch.view.js"
 import SellButton from "views/game/SellButton.view.js"
+import BuyButton from "views/game/BuyButton.view.js"
+
 import Styles from "views/game/GameScreen.view.less"
 
 export default class GameScreen {
@@ -20,6 +22,7 @@ export default class GameScreen {
                         {model.resources.wood}
                     </div>
                     <SellButton />
+                    <BuyButton />
                 </div>
                 <div class="Farm">
                     {model.patches.map((patch) => (

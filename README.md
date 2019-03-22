@@ -4,6 +4,9 @@ A game from the plane ride back from GDC 2019.
 
 ## Features ##
 
+### Currently Scuffed
+* Buying land currently is scuffed-- this is where my plane ride ended.
+
 ### Current Features ###
 
 1. Cut trees with axe.
