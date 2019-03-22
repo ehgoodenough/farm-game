@@ -8,5 +8,24 @@
         padding: @gutter / 2;
         position: absolute;
         background-color: hotpink;
+        font-size: 0.66em;
+
+        .Item {
+            display: inline;
+
+            &:not(:first-child) {
+                &:before {
+                    opacity: 0.5;
+                    content: " | ";
+                }
+            }
+
+            cursor: pointer;
+            opacity: 0.5;
+            &:hover,
+            &[isSelected] {
+                opacity: 1;
+            }
+        }
     }
 }

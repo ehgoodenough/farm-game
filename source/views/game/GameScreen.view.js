@@ -16,12 +16,28 @@ export default class GameScreen {
                 </div>
                 <div class="Inventory">
                     {model.items.map((item) => (
-                        <div class="Item">
-                            {item.name}
-                        </div>
+                        <Item item={item}/>
                     ))}
                 </div>
             </div>
         )
+    }
+}
+
+class Item {
+    render() {
+        return (
+            <div class="Item" isSelected={this.isSelected} onClick={this.onClick}>
+                {this.props.item.label}
+            </div>
+        )
+    }
+    get isSelected() {
+        return model.selectedItem === this.props.item
+    }
+    get onClick() {
+        return (event) => {
+            model.selectedItem = this.props.item
+        }
     }
 }

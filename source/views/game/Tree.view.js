@@ -5,7 +5,7 @@ import Styles from "views/game/Tree.view.less"
 export default class Tree {
     render() {
         return (
-            <div class="Tree" stage={this.props.tree.stage}>
+            <div class="Tree" stage={this.stage}>
                 <div class="Stump"/>
                 <div class="Leaves"/>
                 <div class="Leaves"/>
@@ -13,5 +13,12 @@ export default class Tree {
                 <div class="Leaves"/>
             </div>
         )
+    }
+    get stage() {
+        if(this.props.tree !== undefined) {
+            return this.props.tree.stage
+        } else {
+            return 0
+        }
     }
 }

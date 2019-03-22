@@ -16,10 +16,26 @@ export default class Patch {
         // ...
     }
     onClick() {
-        console.log(this)
-        this.tree.stage += 1
-        if(this.tree.stage >= 6) {
-            this.tree.stage = -1
+        if(model.selectedItem === undefined) {
+            return
+        }
+        if(model.selectedItem.key === "SAPLINGS"
+        && this.tree === undefined) {
+            this.tree = {"stage": 1}
+            console.log("Planted tree! Set to stage 1.")
+        }
+        if(model.selectedItem.key === "WATERING_CAN"
+        && this.tree !== undefined
+        && this.tree.stage < 5) {
+            this.tree.stage += 1
+            console.log("Watered tree! Grew by 1 stage.")
+        }
+        if(model.selectedItem.key === "AXE"
+        && this.tree !== undefined
+        && this.tree.stage === 5) {
+            this.tree = undefined
+            model.resources.wood += 5
+            console.log("Cut tree! Got 5 wood!")
         }
     }
 }

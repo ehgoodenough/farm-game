@@ -20,10 +20,17 @@ export default class Model {
         this.patches = protoworld.patches.map((protopatch) => {
             return new Patch(protopatch)
         })
+
+        this.resources = {
+            "gold": 5,
+            "wood": 0
+        }
+
+        this.selectedItem = undefined
         this.items = [
-            {"name": "Axe"},
-            {"name": "Watering Can"},
-            {"name": "Seeds"},
+            {"key": "AXE", "label": "Axe"},
+            {"key": "WATERING_CAN", "label": "Watering Can"},
+            {"key": "SAPLINGS", "label": "Saplings"},
         ]
     }
     update(delta) {
