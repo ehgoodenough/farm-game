@@ -24,6 +24,7 @@ export default class GameScreen {
     }
 }
 
+// TODO: Move this into its own file. :T
 class Item {
     render() {
         return (

@@ -12,9 +12,9 @@ export default class Patch {
         this.position = protopatch.position
         this.tree = protopatch.tree
     }
-    update(delta) {
-        // ...
-    }
+    // Patch.onClick
+    // Called when a player clicks
+    // on the patch from the view.
     onClick() {
         if(model.selectedItem === undefined) {
             return
