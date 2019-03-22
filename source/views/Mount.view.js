@@ -2,7 +2,6 @@ import Preact from "preact"
 
 import model from "models/.js"
 
-import Frame from "views/Frame.view.js"
 import Patch from "views/game/Patch.view.js"
 import "views/Mount.view.less"
 
@@ -10,11 +9,11 @@ export default class Mount {
     render() {
         return (
             <div class="Mount">
-                <Frame>
+                <div class="Frame">
                     {model.patches.map((patch) => (
                         <Patch patch={patch}/>
                     ))}
-                </Frame>
+                </div>
             </div>
         )
     }
