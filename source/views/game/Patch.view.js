@@ -29,7 +29,13 @@ class Tree {
     render() {
         return (
             <div class="Tree">
-                // ..
+                <div class="Stump"/>
+                <div class="Leaves">
+                    <div class="Leaf"/>
+                    <div class="Leaf"/>
+                    <div class="Leaf"/>
+                    <div class="Leaf"/>
+                </div>
             </div>
         )
     }

@@ -1,11 +1,52 @@
 .Patch {
+    width: 3em;
+    height: 1em;
     position: absolute;
     background-color: brown;
-    width: 3em;
 
     border-radius: 0.1em;
 }
 
 .Tree {
-    //
+    top: -0.5em;
+    position: absolute;
+    .Stump {
+        left: 1em;
+        top: -0em;
+        width: 1em;
+        height: 1em;
+        position: absolute;
+        background-color: orange;
+    }
+    .Leaves {
+        .Leaf {
+            height: 1em;
+            position: absolute;
+            background-color: green;
+            border-radius: 0.5em;
+
+            &:nth-child(1n) {
+                width: 3em;
+                top: -1em;
+            }
+            &:nth-child(2n) {
+                top: -2em;
+                left: 0.25em;
+                width: 2.5em;
+                height: 1em;
+            }
+            &:nth-child(3n) {
+                top: -3em;
+                left: 0.25em;
+                width: 2.5em;
+                height: 1em;
+            }
+            &:nth-child(4n) {
+                top: -4em;
+                left: 1em;
+                width: 1em;
+                height: 1em;
+            }
+        }
+    }
 }

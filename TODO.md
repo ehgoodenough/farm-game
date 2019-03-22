@@ -1,5 +1,4 @@
 Now:
-- Render the trees
 - Render the trees w/ stages
 
 Then:
