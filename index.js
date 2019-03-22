@@ -134,22 +134,52 @@ var urlEscape = __webpack_require__(/*! ../../node_modules/css-loader/dist/runti
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../fonts/comfortaa.ttf */ "./source/fonts/comfortaa.ttf"));
 
 // Module
-exports.push([module.i, "* {\n  margin: 0px;\n  padding: 0px;\n  user-select: none;\n  box-sizing: border-box;\n}\nbody {\n  background-color: #111;\n}\n@keyframes fade-in {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@font-face {\n  font-weight: 400;\n  font-family: \"comfortaa\";\n  src: url(" + ___CSS_LOADER_URL___0___ + ") format(\"truetype\");\n}\n.Frame {\n  padding: 1em;\n  color: #191923;\n  text-align: center;\n  font-family: comfortaa;\n  background-color: #FBFEF9;\n}\n.Frame img {\n  width: 5em;\n}\n", ""]);
+exports.push([module.i, "@font-face {\n  font-weight: 400;\n  font-family: \"comfortaa\";\n  src: url(" + ___CSS_LOADER_URL___0___ + ") format(\"truetype\");\n}\n* {\n  margin: 0px;\n  padding: 0px;\n  user-select: none;\n  box-sizing: border-box;\n}\n:root {\n  font-size: 16px;\n  background-color: #111;\n}\n.Frame {\n  top: 0em;\n  left: 0em;\n  right: 0em;\n  bottom: 0em;\n  margin: auto;\n  position: fixed;\n  overflow: hidden;\n  color: #191923;\n  text-align: center;\n  font-family: comfortaa;\n  background-color: #FBFEF9;\n}\n@media (min-aspect-ratio: 13 / 18) {\n  .Frame {\n    font-size: 5.55555556vh;\n    width: 72.22222222vh;\n    height: 100vh;\n  }\n}\n@media (max-aspect-ratio: 13 / 18) {\n  .Frame {\n    font-size: 7.69230769vw;\n    height: 138.46153846vw;\n    width: 100vw;\n  }\n}\n", ""]);
 
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/components/Frame.view.less":
-/*!******************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/components/Frame.view.less ***!
-  \******************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/GameScreen.view.less":
+/*!*****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/GameScreen.view.less ***!
+  \*****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "#frame {\n  top: 0px;\n  left: 0px;\n  right: 0px;\n  bottom: 0px;\n  margin: auto;\n  position: fixed;\n  overflow: hidden;\n}\n@media (min-aspect-ratio: 16 / 9) {\n  #frame {\n    font-size: 11.11111111vh;\n    width: 177.77777778vh;\n    height: 100vh;\n  }\n}\n@media (max-aspect-ratio: 16 / 9) {\n  #frame {\n    font-size: 6.25vw;\n    height: 56.25vw;\n    width: 100vw;\n  }\n}\n", ""]);
+exports.push([module.i, ".GameScreen .Inventory {\n  left: 0em;\n  right: 0em;\n  bottom: 0em;\n  padding: 0.5em;\n  position: absolute;\n  background-color: hotpink;\n  font-size: 0.66em;\n}\n.GameScreen .Inventory .Item {\n  display: inline;\n  cursor: pointer;\n  opacity: 0.5;\n}\n.GameScreen .Inventory .Item:not(:first-child):before {\n  opacity: 0.5;\n  content: \" | \";\n}\n.GameScreen .Inventory .Item:hover,\n.GameScreen .Inventory .Item[isSelected] {\n  opacity: 1;\n}\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/Patch.view.less":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/Patch.view.less ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".Patch {\n  width: 3em;\n  height: 1em;\n  position: absolute;\n  background-color: brown;\n  border-radius: 0.1em;\n}\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/Tree.view.less":
+/*!***********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/Tree.view.less ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".Tree {\n  top: -0.5em;\n  width: 100%;\n  position: absolute;\n}\n.Tree .Stump,\n.Tree .Leaves {\n  left: 0em;\n  right: 0em;\n  margin: auto;\n  position: absolute;\n}\n.Tree .Stump {\n  background-color: orange;\n  border-radius: 0.1em;\n}\n.Tree .Leaves {\n  background-color: green;\n  border-radius: 0.5em;\n}\n.Tree[stage=\"1\"] .Stump {\n  top: 0em;\n  width: 1em;\n  height: 1em;\n}\n.Tree[stage=\"2\"] .Stump {\n  top: 0em;\n  width: 1em;\n  height: 1em;\n}\n.Tree[stage=\"2\"] .Leaves:nth-of-type(1n) {\n  height: 1em;\n  width: 2em;\n  top: -1em;\n}\n.Tree[stage=\"3\"] .Stump {\n  top: 0em;\n  width: 1em;\n  height: 1em;\n}\n.Tree[stage=\"3\"] .Leaves:nth-of-type(1n) {\n  width: 3em;\n  height: 1em;\n  top: -1em;\n}\n.Tree[stage=\"3\"] .Leaves:nth-of-type(2n) {\n  top: -2em;\n  width: 2.5em;\n  height: 1em;\n}\n.Tree[stage=\"4\"] .Stump {\n  top: 0em;\n  width: 1em;\n  height: 1em;\n}\n.Tree[stage=\"4\"] .Leaves {\n  height: 1em;\n}\n.Tree[stage=\"4\"] .Leaves:nth-of-type(1n) {\n  width: 3em;\n  top: -1em;\n}\n.Tree[stage=\"4\"] .Leaves:nth-of-type(2n) {\n  top: -2em;\n  width: 2.5em;\n  height: 1em;\n}\n.Tree[stage=\"4\"] .Leaves:nth-of-type(3n) {\n  top: -3em;\n  width: 2em;\n  height: 1em;\n}\n.Tree[stage=\"5\"] .Stump {\n  top: 0em;\n  width: 1em;\n  height: 1em;\n}\n.Tree[stage=\"5\"] .Leaves {\n  height: 1em;\n}\n.Tree[stage=\"5\"] .Leaves:nth-of-type(1n) {\n  width: 3em;\n  top: -1em;\n}\n.Tree[stage=\"5\"] .Leaves:nth-of-type(2n) {\n  top: -2em;\n  width: 2.5em;\n  height: 1em;\n}\n.Tree[stage=\"5\"] .Leaves:nth-of-type(3n) {\n  top: -3em;\n  width: 2.5em;\n  height: 1em;\n}\n.Tree[stage=\"5\"] .Leaves:nth-of-type(4n) {\n  top: -4em;\n  width: 1.5em;\n  height: 1em;\n}\n", ""]);
 
 
 
@@ -1905,17 +1935,6 @@ module.exports = __webpack_require__.p + "a6707143c08357a98c345854736fb894.ttf";
 
 /***/ }),
 
-/***/ "./source/images/spacebar.png":
-/*!************************************!*\
-  !*** ./source/images/spacebar.png ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "a71a4230ca6182b5cbc233b40470f7d6.png";
-
-/***/ }),
-
 /***/ "./source/index.js":
 /*!*************************!*\
   !*** ./source/index.js ***!
@@ -1939,7 +1958,7 @@ if (true) {
 
 
 var loop = new yaafloop__WEBPACK_IMPORTED_MODULE_0___default.a(function (delta) {
-  models_js__WEBPACK_IMPORTED_MODULE_1__["default"].update(delta);
+  // model.update(delta)
   views_js__WEBPACK_IMPORTED_MODULE_2__["default"].update(delta);
 });
 
@@ -1972,33 +1991,140 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Model; });
 /* harmony import */ var keyb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! keyb */ "./node_modules/keyb/index.js");
 /* harmony import */ var keyb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(keyb__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var models_Patch_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! models/Patch.js */ "./source/models/Patch.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+var protoworld = {
+  "patches": [{
+    "position": {
+      "x": 1,
+      "y": 9
+    },
+    "tree": {
+      "stage": 5
+    }
+  }, {
+    "position": {
+      "x": 5,
+      "y": 9
+    },
+    "tree": {
+      "stage": 5
+    }
+  }, {
+    "position": {
+      "x": 9,
+      "y": 9
+    },
+    "tree": {
+      "stage": 5
+    }
+  }]
+};
+
+var Model = function Model() {
+  _classCallCheck(this, Model);
+
+  this.patches = protoworld.patches.map(function (protopatch) {
+    return new models_Patch_js__WEBPACK_IMPORTED_MODULE_1__["default"](protopatch);
+  });
+  this.resources = {
+    "gold": 5,
+    "wood": 0 // When an item is selected from the inventory,
+    // it sets the `selectedItem` field. When a click
+    // happens on a patch, it consults this field
+    // to see how it should react to this item.
+
+  };
+  this.selectedItem = undefined;
+  this.items = [{
+    "key": "AXE",
+    "label": "Axe"
+  }, {
+    "key": "WATERING_CAN",
+    "label": "Watering Can"
+  }, {
+    "key": "SAPLINGS",
+    "label": "Saplings"
+  }];
+};
+
+
+
+/***/ }),
+
+/***/ "./source/models/Patch.js":
+/*!********************************!*\
+  !*** ./source/models/Patch.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Patch; });
+/* harmony import */ var models_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! models/.js */ "./source/models/.js");
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+ // @class Patch
+// A patch is the piece of land that
+// the players can grow their trees!
 
-
-var Model =
+var Patch =
 /*#__PURE__*/
 function () {
-  function Model() {
-    _classCallCheck(this, Model);
+  function Patch(protopatch) {
+    _classCallCheck(this, Patch);
 
-    this.time = 0;
-  }
+    protopatch = protopatch || {};
+    protopatch.position = protopatch.position || {
+      "x": 0,
+      "y": 0
+    };
+    protopatch.tree = protopatch.tree || {
+      "stage": 0
+    };
+    this.position = protopatch.position;
+    this.tree = protopatch.tree;
+  } // Patch.onClick
+  // Called when a player clicks
+  // on the patch from the view.
 
-  _createClass(Model, [{
-    key: "update",
-    value: function update(delta) {
-      if (keyb__WEBPACK_IMPORTED_MODULE_0___default.a.isPressed("<space>")) {
-        this.time += delta.s;
+
+  _createClass(Patch, [{
+    key: "onClick",
+    value: function onClick() {
+      if (models_js__WEBPACK_IMPORTED_MODULE_0__["default"].selectedItem === undefined) {
+        return;
+      }
+
+      if (models_js__WEBPACK_IMPORTED_MODULE_0__["default"].selectedItem.key === "SAPLINGS" && this.tree === undefined) {
+        this.tree = {
+          "stage": 1
+        };
+        console.log("Planted tree! Set to stage 1.");
+      }
+
+      if (models_js__WEBPACK_IMPORTED_MODULE_0__["default"].selectedItem.key === "WATERING_CAN" && this.tree !== undefined && this.tree.stage < 5) {
+        this.tree.stage += 1;
+        console.log("Watered tree! Grew by 1 stage.");
+      }
+
+      if (models_js__WEBPACK_IMPORTED_MODULE_0__["default"].selectedItem.key === "AXE" && this.tree !== undefined && this.tree.stage === 5) {
+        this.tree = undefined;
+        models_js__WEBPACK_IMPORTED_MODULE_0__["default"].resources.wood += 5;
+        console.log("Cut tree! Got 5 wood!");
       }
     }
   }]);
 
-  return Model;
+  return Patch;
 }();
 
 
@@ -2041,7 +2167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Mount; });
 /* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.mjs");
 /* harmony import */ var models_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! models/.js */ "./source/models/.js");
-/* harmony import */ var views_components_Frame_view_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! views/components/Frame.view.js */ "./source/views/components/Frame.view.js");
+/* harmony import */ var views_game_GameScreen_view_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! views/game/GameScreen.view.js */ "./source/views/game/GameScreen.view.js");
 /* harmony import */ var views_Mount_view_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! views/Mount.view.less */ "./source/views/Mount.view.less");
 /* harmony import */ var views_Mount_view_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(views_Mount_view_less__WEBPACK_IMPORTED_MODULE_3__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2066,12 +2192,15 @@ function () {
     key: "render",
     value: function render() {
       return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
-        className: "Mount"
-      }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h(views_components_Frame_view_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        size: "16x9"
-      }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("img", {
-        src: __webpack_require__(/*! images/spacebar.png */ "./source/images/spacebar.png")
-      }), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", null, models_js__WEBPACK_IMPORTED_MODULE_1__["default"].time.toFixed(3), "s")));
+        class: "Mount"
+      }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Frame"
+      }, this.screen));
+    }
+  }, {
+    key: "screen",
+    get: function get() {
+      return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h(views_game_GameScreen_view_js__WEBPACK_IMPORTED_MODULE_2__["default"], null);
     }
   }]);
 
@@ -2112,19 +2241,21 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./source/views/components/Frame.view.js":
-/*!***********************************************!*\
-  !*** ./source/views/components/Frame.view.js ***!
-  \***********************************************/
+/***/ "./source/views/game/GameScreen.view.js":
+/*!**********************************************!*\
+  !*** ./source/views/game/GameScreen.view.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Frame; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return GameScreen; });
 /* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.mjs");
-/* harmony import */ var views_components_Frame_view_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! views/components/Frame.view.less */ "./source/views/components/Frame.view.less");
-/* harmony import */ var views_components_Frame_view_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(views_components_Frame_view_less__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var models_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! models/.js */ "./source/models/.js");
+/* harmony import */ var views_game_Patch_view_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! views/game/Patch.view.js */ "./source/views/game/Patch.view.js");
+/* harmony import */ var views_game_GameScreen_view_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! views/game/GameScreen.view.less */ "./source/views/game/GameScreen.view.less");
+/* harmony import */ var views_game_GameScreen_view_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(views_game_GameScreen_view_less__WEBPACK_IMPORTED_MODULE_3__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -2134,39 +2265,283 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var Frame =
+
+
+var GameScreen =
 /*#__PURE__*/
 function () {
-  function Frame() {
-    _classCallCheck(this, Frame);
+  function GameScreen() {
+    _classCallCheck(this, GameScreen);
   }
 
-  _createClass(Frame, [{
+  _createClass(GameScreen, [{
     key: "render",
     value: function render() {
       return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
-        className: "Frame",
-        id: "frame"
-      }, this.props.children);
+        class: "GameScreen"
+      }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Farm"
+      }, models_js__WEBPACK_IMPORTED_MODULE_1__["default"].patches.map(function (patch) {
+        return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h(views_game_Patch_view_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          patch: patch
+        });
+      })), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Inventory"
+      }, models_js__WEBPACK_IMPORTED_MODULE_1__["default"].items.map(function (item) {
+        return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h(Item, {
+          item: item
+        });
+      })));
     }
   }]);
 
-  return Frame;
+  return GameScreen;
+}(); // TODO: Move this into its own file. :T
+
+
+
+
+var Item =
+/*#__PURE__*/
+function () {
+  function Item() {
+    _classCallCheck(this, Item);
+  }
+
+  _createClass(Item, [{
+    key: "render",
+    value: function render() {
+      return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Item",
+        isSelected: this.isSelected,
+        onClick: this.onClick
+      }, this.props.item.label);
+    }
+  }, {
+    key: "isSelected",
+    get: function get() {
+      return models_js__WEBPACK_IMPORTED_MODULE_1__["default"].selectedItem === this.props.item;
+    }
+  }, {
+    key: "onClick",
+    get: function get() {
+      var _this = this;
+
+      return function (event) {
+        models_js__WEBPACK_IMPORTED_MODULE_1__["default"].selectedItem = _this.props.item;
+      };
+    }
+  }]);
+
+  return Item;
+}();
+
+/***/ }),
+
+/***/ "./source/views/game/GameScreen.view.less":
+/*!************************************************!*\
+  !*** ./source/views/game/GameScreen.view.less ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./GameScreen.view.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/GameScreen.view.less");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./source/views/game/Patch.view.js":
+/*!*****************************************!*\
+  !*** ./source/views/game/Patch.view.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Patch; });
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.mjs");
+/* harmony import */ var models_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! models/.js */ "./source/models/.js");
+/* harmony import */ var views_game_Tree_view_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! views/game/Tree.view.js */ "./source/views/game/Tree.view.js");
+/* harmony import */ var views_game_Patch_view_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! views/game/Patch.view.less */ "./source/views/game/Patch.view.less");
+/* harmony import */ var views_game_Patch_view_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(views_game_Patch_view_less__WEBPACK_IMPORTED_MODULE_3__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+
+
+
+var Patch =
+/*#__PURE__*/
+function () {
+  function Patch() {
+    _classCallCheck(this, Patch);
+  }
+
+  _createClass(Patch, [{
+    key: "render",
+    value: function render() {
+      return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Patch",
+        style: this.style,
+        onClick: this.onClick
+      }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h(views_game_Tree_view_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        tree: this.props.patch.tree
+      }));
+    }
+  }, {
+    key: "style",
+    get: function get() {
+      return {
+        "top": this.props.patch.position.y + "em",
+        "left": this.props.patch.position.x + "em"
+      };
+    }
+  }, {
+    key: "onClick",
+    get: function get() {
+      var _this = this;
+
+      return function (event) {
+        _this.props.patch.onClick();
+      };
+    }
+  }]);
+
+  return Patch;
 }();
 
 
 
 /***/ }),
 
-/***/ "./source/views/components/Frame.view.less":
-/*!*************************************************!*\
-  !*** ./source/views/components/Frame.view.less ***!
-  \*************************************************/
+/***/ "./source/views/game/Patch.view.less":
+/*!*******************************************!*\
+  !*** ./source/views/game/Patch.view.less ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./Frame.view.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/components/Frame.view.less");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./Patch.view.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/Patch.view.less");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./source/views/game/Tree.view.js":
+/*!****************************************!*\
+  !*** ./source/views/game/Tree.view.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Tree; });
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.mjs");
+/* harmony import */ var views_game_Tree_view_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! views/game/Tree.view.less */ "./source/views/game/Tree.view.less");
+/* harmony import */ var views_game_Tree_view_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(views_game_Tree_view_less__WEBPACK_IMPORTED_MODULE_1__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+
+var Tree =
+/*#__PURE__*/
+function () {
+  function Tree() {
+    _classCallCheck(this, Tree);
+  }
+
+  _createClass(Tree, [{
+    key: "render",
+    value: function render() {
+      return preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Tree",
+        stage: this.stage
+      }, preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Stump"
+      }), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Leaves"
+      }), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Leaves"
+      }), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Leaves"
+      }), preact__WEBPACK_IMPORTED_MODULE_0__["default"].h("div", {
+        class: "Leaves"
+      }));
+    }
+  }, {
+    key: "stage",
+    get: function get() {
+      if (this.props.tree !== undefined) {
+        return this.props.tree.stage;
+      } else {
+        return 0;
+      }
+    }
+  }]);
+
+  return Tree;
+}();
+
+
+
+/***/ }),
+
+/***/ "./source/views/game/Tree.view.less":
+/*!******************************************!*\
+  !*** ./source/views/game/Tree.view.less ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./Tree.view.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./source/views/game/Tree.view.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
