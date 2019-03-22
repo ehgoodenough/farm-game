@@ -1,6 +1,6 @@
 import Preact from "preact"
 
-import "views/components/Frame.view.less"
+import "views/Frame.view.less"
 
 export default class Frame {
     render() {
