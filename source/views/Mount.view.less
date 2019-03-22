@@ -27,16 +27,16 @@
     position: fixed;
     overflow: hidden;
 
-    .aspect-ratio(9, 12);
+    // The frame is 13ems wide
+    // and 18ems tall. Use this
+    // to position and size the
+    // content accordingly.
+    .aspect-ratio(13, 18);
 
     color: @black;
     text-align: center;
     font-family: comfortaa;
     background-color: @white;
-
-    img {
-        width: 5em;
-    }
 }
 
 .aspect-ratio(@width, @height) {

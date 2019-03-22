@@ -7,10 +7,8 @@ import "views/game/Patch.view.less"
 export default class Patch {
     render() {
         return (
-            <div class="Patch"
-                style={this.style}
-                onClick={this.onClick}>
-                {this.tree}
+            <div class="Patch" style={this.style} onClick={this.onClick}>
+                <Tree tree={this.props.patch.tree}/>
             </div>
         )
     }
@@ -25,7 +23,14 @@ export default class Patch {
             this.props.patch.onClick()
         }
     }
-    get tree() {
-        return "tree"
+}
+
+class Tree {
+    render() {
+        return (
+            <div class="Tree">
+                // ..
+            </div>
+        )
     }
 }
