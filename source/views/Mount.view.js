@@ -8,8 +8,8 @@ import "views/Mount.view.less"
 export default class Mount {
     render() {
         return (
-            <div className="Mount">
-                <Frame size="16x9">
+            <div class="Mount">
+                <Frame>
                     <img src={require("images/spacebar.png")}/>
                     <div>{model.time.toFixed(3)}s</div>
                 </Frame>
