@@ -1,0 +1,130 @@
+.Tree {
+    top: -0.5em;
+    width: 100%;
+    position: absolute;
+
+    .Stump, .Leaves {
+        left: 0em;
+        right: 0em;
+        margin: auto;
+        position: absolute;
+    }
+    .Stump {
+        background-color: orange;
+        border-radius: 0.1em;
+    }
+    .Leaves {
+        background-color: green;
+        border-radius: 0.5em;
+    }
+
+    // The empty stage.
+    // No tree has been planted.
+    &[stage="0"] {
+        // Intentionally empty.
+    }
+
+    // The seedling stage!
+    &[stage="1"] {
+        .Stump {
+            top: -0em;
+            width: 1em;
+            height: 1em;
+        }
+
+    }
+
+    // The sprout stage!
+    &[stage="2"] {
+        .Stump {
+            top: -0em;
+            width: 1em;
+            height: 1em;
+        }
+        .Leaves {
+            &:nth-of-type(1n) {
+                height: 1em;
+                width: 2em;
+                top: -1em;
+            }
+        }
+    }
+
+    // The seedling stage!
+    &[stage="3"] {
+        .Stump {
+            top: -0em;
+            width: 1em;
+            height: 1em;
+        }
+        .Leaves {
+            &:nth-of-type(1n) {
+                width: 3em;
+                height: 1em;
+                top: -1em;
+            }
+            &:nth-of-type(2n) {
+                top: -2em;
+                width: 2.5em;
+                height: 1em;
+            }
+        }
+    }
+
+    &[stage="4"] {
+        .Stump {
+            top: -0em;
+            width: 1em;
+            height: 1em;
+        }
+        .Leaves {
+            height: 1em;
+
+            &:nth-of-type(1n) {
+                width: 3em;
+                top: -1em;
+            }
+            &:nth-of-type(2n) {
+                top: -2em;
+                width: 2.5em;
+                height: 1em;
+            }
+            &:nth-of-type(3n) {
+                top: -3em;
+                width: 2em;
+                height: 1em;
+            }
+        }
+    }
+
+    &[stage="5"] {
+        .Stump {
+            top: -0em;
+            width: 1em;
+            height: 1em;
+        }
+        .Leaves {
+            height: 1em;
+
+            &:nth-of-type(1n) {
+                width: 3em;
+                top: -1em;
+            }
+            &:nth-of-type(2n) {
+                top: -2em;
+                width: 2.5em;
+                height: 1em;
+            }
+            &:nth-of-type(3n) {
+                top: -3em;
+                width: 2.5em;
+                height: 1em;
+            }
+            &:nth-of-type(4n) {
+                top: -4em;
+                width: 1.5em;
+                height: 1em;
+            }
+        }
+    }
+}

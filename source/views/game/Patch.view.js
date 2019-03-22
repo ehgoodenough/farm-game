@@ -2,6 +2,7 @@ import Preact from "preact"
 
 import model from "models/.js"
 
+import Tree from "views/game/Tree.view.js"
 import "views/game/Patch.view.less"
 
 export default class Patch {
@@ -22,21 +23,5 @@ export default class Patch {
         return (event) => {
             this.props.patch.onClick()
         }
-    }
-}
-
-class Tree {
-    render() {
-        return (
-            <div class="Tree">
-                <div class="Stump"/>
-                <div class="Leaves">
-                    <div class="Leaf"/>
-                    <div class="Leaf"/>
-                    <div class="Leaf"/>
-                    <div class="Leaf"/>
-                </div>
-            </div>
-        )
     }
 }
