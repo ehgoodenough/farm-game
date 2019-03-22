@@ -3,7 +3,7 @@ import Preact from "preact"
 import model from "models/.js"
 
 import Tree from "views/game/Tree.view.js"
-import "views/game/Patch.view.less"
+import Styles from "views/game/Patch.view.less"
 
 export default class Patch {
     render() {

@@ -7,10 +7,10 @@ export default class Patch {
     constructor(protopatch) {
         protopatch = protopatch || {}
         protopatch.position = protopatch.position || {"x": 0, "y": 0}
+        protopatch.tree = protopatch.tree || {"stage": 0}
 
         this.position = protopatch.position
-
-        this.tree = {"stage": 0}
+        this.tree = protopatch.tree
     }
     update(delta) {
         // ...
