@@ -8,24 +8,47 @@ import Yaafloop from "yaafloop"
 import model from "models/.js"
 import view from "views/.js"
 
-let loop = new Yaafloop((delta) => {
+let afloop = new Yaafloop((delta) => {
     // model.update(delta)
     view.update(delta)
 })
 
-const FPS = 60
-const CAP = 1000
-let now = undefined
-window.setInterval(() => {
-    let delta = Math.min(window.performance.now() - (now || 0), CAP)
-    delta = {
-        "ms": delta, // in milliseconds
-        "s": delta / 1000, // in seconds
-        "f": delta / (1000 / FPS), // in frames
-    }
-
+let iloop = new Yailoop((delta) => {
     model.clock.update(delta)
     document.title = model.clock.timestring + " - Pomodoro Farm"
+})
 
-    now = window.performance.now()
-}, 1)
+function Iloop(func) {
+    let now = window.performance.now()
+    window.setInterval(() => {
+        let delta = window.performance.now() - now
+        func(delta)
+        now = window.performance.now()
+    }, 1)
+}
+
+function Yailoop(func) {
+    this.func = func
+
+    this.fps = 60
+    this.cap = 1000
+
+    return new Iloop((delta) => {
+        // Cap the delta.
+        if(this.cap != undefined) {
+            delta = Math.min(delta, this.cap)
+        }
+
+        // Calculate the delta in
+        // different units of time.
+        delta = {
+            "ms": delta, // in milliseconds
+            "s": delta / 1000, // in seconds
+            "f": delta / (1000 / this.fps), // in frames
+        }
+
+        // Call the function
+        // with the delta.
+        this.func(delta)
+    })
+}
