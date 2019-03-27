@@ -36,7 +36,7 @@ class Inventory {
     render() {
         return (
             <div class="Inventory">
-                {model.items.map((item) => (
+                {model.inventory.items.map((item) => (
                     <Item item={item}/>
                 ))}
             </div>
@@ -52,11 +52,11 @@ class Item {
         )
     }
     get isSelected() {
-        return model.selectedItem === this.props.item
+        return model.inventory.selectedItem === this.props.item
     }
     get onClick() {
         return (event) => {
-            model.selectedItem = this.props.item
+            model.inventory.selectedItem = this.props.item
         }
     }
 }

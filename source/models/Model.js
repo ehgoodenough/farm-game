@@ -2,6 +2,7 @@ import Keyb from "keyb"
 
 import Patch from "models/Patch.js"
 import Clock from "models/Clock.js"
+import Inventory from "models/Inventory.js"
 
 const protoworld = {
     "patches": [
@@ -13,26 +14,12 @@ const protoworld = {
 
 export default class Model {
     constructor() {
+        // TODO: Move this to a world class with other worldly concerns.
         this.patches = protoworld.patches.map((protopatch) => {
             return new Patch(protopatch)
         })
 
-        this.resources = {
-            "gold": 5,
-            "wood": 0
-        }
-
-        // When an item is selected from the inventory,
-        // it sets the `selectedItem` field. When a click
-        // happens on a patch, it consults this field
-        // to see how it should react to this item.
-        this.selectedItem = undefined
-        this.items = [
-            {"key": "AXE", "label": "Axe"},
-            {"key": "WATERING_CAN", "label": "Watering Can"},
-            {"key": "SAPLINGS", "label": "Saplings"},
-        ]
-
-        this.clock = new Clock({"game": this})
+        this.clock = new Clock()
+        this.inventory = new Inventory()
     }
 }

@@ -1,4 +1,10 @@
-### To Do Next ###
+### To Do ###
+- Add a world, defined by a series of slopes.
+- Saturate and darken the world during the day/night cycle.
+- Switch to better colors/art.
+- Saving progress between page refreshes.
+
+### To Do: Economy ###
 - Add some UI to see your resources: wood and gold. This can be along the top, and look like the ui we have for inventory.
 - Add a separate screen in the mount, a shop screen. Be able to toggle between the game screen and shop screen.
 - Add the ability to sell the wood for gold.
@@ -6,9 +12,6 @@
 - Be able to buy more saplings with gold from the shop.
 
 ### To Do Eventually ###
-- Day/Night Cycle
-- Better colors
-- Saving progress between page refreshes.
 - [Juice] Soft sway of the wind in the trees.
 - [Scope creep] More kinds of trees!
 - [Usability] Make the space above an empty plot also clickable/hoverable.
