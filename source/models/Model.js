@@ -1,12 +1,13 @@
 import Keyb from "keyb"
 
 import Patch from "models/Patch.js"
+import Clock from "models/Clock.js"
 
 const protoworld = {
     "patches": [
-        {"position": {"x": 1, "y": 9}, "tree": {"stage": 5}},
-        {"position": {"x": 5, "y": 9}, "tree": {"stage": 5}},
-        {"position": {"x": 9, "y": 9}, "tree": {"stage": 5}},
+        {"position": {"x": 1, "y": 12}, "tree": {"stage": 5}},
+        {"position": {"x": 5, "y": 12}, "tree": {"stage": 5}},
+        {"position": {"x": 9, "y": 12}, "tree": {"stage": 5}},
     ]
 }
 
@@ -31,5 +32,7 @@ export default class Model {
             {"key": "WATERING_CAN", "label": "Watering Can"},
             {"key": "SAPLINGS", "label": "Saplings"},
         ]
+
+        this.clock = new Clock({"game": this})
     }
 }

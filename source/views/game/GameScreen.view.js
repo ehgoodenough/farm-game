@@ -2,6 +2,8 @@ import Preact from "preact"
 
 import model from "models/.js"
 
+import Sky from "views/game/Sky.view.js"
+import Clock from "views/game/Clock.view.js"
 import Patch from "views/game/Patch.view.js"
 import Styles from "views/game/GameScreen.view.less"
 
@@ -9,22 +11,38 @@ export default class GameScreen {
     render() {
         return (
             <div class="GameScreen">
-                <div class="Farm">
-                    {model.patches.map((patch) => (
-                        <Patch patch={patch}/>
-                    ))}
-                </div>
-                <div class="Inventory">
-                    {model.items.map((item) => (
-                        <Item item={item}/>
-                    ))}
-                </div>
+                <Sky clock={model.clock}/>
+                <Clock clock={model.clock}/>
+                <World/>
+                <Inventory/>
             </div>
         )
     }
 }
 
-// TODO: Move this into its own file. :T
+class World {
+    render() {
+        return (
+            <div class="Farm">
+                {model.patches.map((patch) => (
+                    <Patch patch={patch}/>
+                ))}
+            </div>
+        )
+    }
+}
+
+class Inventory {
+    render() {
+        return (
+            <div class="Inventory">
+                {model.items.map((item) => (
+                    <Item item={item}/>
+                ))}
+            </div>
+        )
+    }
+}
 class Item {
     render() {
         return (
