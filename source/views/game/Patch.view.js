@@ -9,7 +9,9 @@ export default class Patch {
     render() {
         return (
             <div class="Patch" style={this.style} onClick={this.onClick}>
-                <Tree tree={this.props.patch.tree}/>
+                <div class="Dirt">
+                    <Tree tree={this.props.patch.tree}/>
+                </div>
             </div>
         )
     }

@@ -14,7 +14,6 @@
 ### To Do Eventually ###
 - [Juice] Soft sway of the wind in the trees.
 - [Scope creep] More kinds of trees!
-- [Usability] Make the space above an empty plot also clickable/hoverable.
 - [Juice] Add a sound when the tree is getting cut, watered, etc.
 - [Juice] Cutting trees should take a few clicks, not just one click.
 - [Usability] Unselecting the currently selected item.
